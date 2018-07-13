@@ -1,0 +1,60 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+
+<div class="row">
+
+    <div class="input-group mb-2">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Check Palindrome</span>
+        </div>
+        <textarea id="mytext" class="form-control" aria-label="With textarea"></textarea>
+    </div>
+    <br>
+    <span>Result:</span>
+    <span id="myresult" style="color:blue;font-size:medium"></span>
+
+</div>
+<div class="row">
+
+    <div class="col-md-2">
+        <button id="btCheck" type="button" class="btn btn-primary">Check</button>
+    </div>
+    <div class="col-md-2">
+        <button id="btClear" type="button" class="btn btn-primary">Clear Text</button>
+    </div>
+    <div class="col-md-3">
+        <button id="btOpen" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Open persisted palindromes</button>
+    </div>
+
+    <div class="col-md-3">
+        
+    </div>
+    <div class="col-md-2"></div>
+</div>
+
+<!-- Modal -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">List of persisted palindromes</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="mymodalbody">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                
+            </div>
+        </div>
+    </div>
+</div>

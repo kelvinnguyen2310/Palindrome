@@ -1,7 +1,11 @@
 # Palindrome
 
+This is a demo to check palindrome string. The architecture is a web front-end to call to a web API to verify the input string.
+This is just a quick demo hence it is not too much engineering. Its purpose is to demonstrate the architecture idea with some techniques about bootstrap, JQuery, ASP.NET core, ASP.NET API, Entity Framework Core and DB.
+
 1. .NET Core API is running at http://localhost:10750/api, .net core framework 2.1 on visual studio 2017 version 15.7.4
 API is using Entity Framework Core, Code First approach with Fluent API. DBContext is injected into controller.
+DB file path is configured in appsettings.json
 
 2. DB is using sqlite, db file palindrome.db is at same folder with project PalindromeAPI
 There is only 1 table named Tbl in database palindrome.db
